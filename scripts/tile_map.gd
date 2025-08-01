@@ -16,6 +16,8 @@ func _unhandled_input(event):
 
 		# Add highlight instance to show selection
 		current_highlight = highlight.instantiate()
-		current_highlight.global_position = to_global(map_to_local(tile_coords))
+		var tile_size = tile_set.tile_size
+		current_highlight.global_position = global_position + map_to_local(tile_coords) + Vector2(-32, -32)
+		print("Tile coordinates (world):", global_position + map_to_local(tile_coords))
 		add_child(current_highlight)
 	
