@@ -1,9 +1,10 @@
-[gd_scene load_steps=11 format=3 uid="uid://dmbj2pa2muasr"]
+[gd_scene load_steps=12 format=3 uid="uid://dmbj2pa2muasr"]
 
 [ext_resource type="Texture2D" uid="uid://dw1p4kiua4gpk" path="res://ASSets/water.png" id="1_0hol4"]
 [ext_resource type="Texture2D" uid="uid://bsiu1koevne0o" path="res://ASSets/tileset1.png" id="1_wtcfe"]
 [ext_resource type="Script" uid="uid://nde6isxhtv8g" path="res://scripts/tile_map.gd" id="2_0e48y"]
 [ext_resource type="Texture2D" uid="uid://i6h0dr5b30fm" path="res://ASSets/beach.png" id="2_q6r6c"]
+[ext_resource type="Script" uid="uid://joelysy0srvv" path="res://scripts/camera_controller.gd" id="3_0e48y"]
 [ext_resource type="Texture2D" uid="uid://dq65r8xlau86y" path="res://ASSets/beach_tile_set.png" id="3_q6r6c"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kdubu"]
@@ -72,3 +73,4 @@ script = ExtResource("2_0e48y")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(576, 325)
+script = ExtResource("3_0e48y")
